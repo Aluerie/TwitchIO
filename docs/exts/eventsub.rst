@@ -146,6 +146,14 @@ This is a list of events dispatched by the eventsub ext.
 
     Called when someone resubscribes with a message to a channel that you've subscribed to.
 
+.. function:: event_eventsub_notification_ban(event: ChannelBanData)
+
+    Called when someone is timed out or banned from a channel you've subscribed to.
+
+.. function:: event_eventsub_notification_unban(event: ChannelUnbanData)
+
+    Called when someone is unbanned from a channel you've subscribed to.
+
 .. function:: event_eventsub_notification_cheer(event: ChannelCheerData)
 
     Called when someone cheers on a channel you've subscribed to.
@@ -270,6 +278,12 @@ API Reference
 .. attributetable::: ChannelBanData
 
 .. autoclass:: ChannelBanData
+    :members:
+    :inherited-members:
+
+.. attributetable::: ChannelUnbanData
+
+.. autoclass:: ChannelUnbanData
     :members:
     :inherited-members:
 
